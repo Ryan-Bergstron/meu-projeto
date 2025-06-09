@@ -1,0 +1,149 @@
+      :root {
+            --cor-primaria: #b48a78;
+            --cor-secundaria: #a06c5a;
+            --cor-destaque: #f7e7de;
+            --cor-fundo: #f8f8f8;
+            --cor-texto: #3d2c29;
+            --cor-branco: #fff;
+            --cor-hover: #e2cfc3;
+        }
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--cor-fundo);
+            color: var(--cor-texto);
+        }
+        header {
+            background: linear-gradient(90deg, var(--cor-primaria) 60%, var(--cor-secundaria) 100%);
+            color: var(--cor-branco);
+            padding: 40px 0 25px 0;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.7rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        nav {
+            background: var(--cor-secundaria);
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        nav a {
+            color: var(--cor-branco);
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 600;
+            font-size: 1.08rem;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: var(--cor-destaque);
+            transition: width 0.3s;
+            margin: 0 auto;
+        }
+        nav a:hover {
+            color: var(--cor-destaque);
+        }
+        nav a:hover::after {
+            width: 80%;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: var(--cor-secundaria);
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+        }
+        .galeria img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+            background: var(--cor-branco);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .galeria img:hover {
+            transform: scale(1.04) rotate(-1deg);
+            box-shadow: 0 8px 32px rgba(180,138,120,0.18);
+        }
+        .sobre {
+            background: var(--cor-branco);
+            padding: 32px;
+            border-radius: 12px;
+            margin-bottom: 38px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            font-size: 1.08rem;
+            line-height: 1.7;
+        }
+        footer {
+            background: linear-gradient(90deg, var(--cor-secundaria) 60%, var(--cor-primaria) 100%);
+            color: var(--cor-branco);
+            text-align: center;
+            padding: 32px 10px 16px 10px;
+            margin-top: 50px;
+            border-radius: 18px 18px 0 0;
+            box-shadow: 0 -2px 12px rgba(0,0,0,0.07);
+        }
+        .contato {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .contato p {
+            margin: 0;
+            font-size: 1.08rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .contato a {
+            color: var(--cor-destaque);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .contato a:hover {
+            color: var(--cor-hover);
+        }
+        .contato i {
+            font-size: 1.2em;
+            margin-right: 6px;
+        }
+        @media (max-width: 800px) {
+            .container { padding: 0 8px; }
+            .sobre { padding: 18px; }
+            .galeria { gap: 14px; }
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.2rem; }
+            .container { padding: 0 2px; }
+            .sobre { padding: 10px; font-size: 1rem; }
+            footer { padding: 18px 4px 10px 4px; }
+        }
