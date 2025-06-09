@@ -88,39 +88,4 @@ window.addEventListener('DOMContentLoaded', () => {
             document.body.appendChild(overlay);
         });
     });
-
-    function copiarTexto(texto) {
-        navigator.clipboard.writeText(texto);
-        const aviso = document.createElement('div');
-        aviso.textContent = 'Copiado!';
-        aviso.style.position = 'fixed';
-        aviso.style.bottom = '80px';
-        aviso.style.right = '40px';
-        aviso.style.background = '#b48a78';
-        aviso.style.color = '#fff';
-        aviso.style.padding = '10px 24px';
-        aviso.style.borderRadius = '18px';
-        aviso.style.fontSize = '1rem';
-        aviso.style.boxShadow = '0 2px 12px rgba(0,0,0,0.10)';
-        aviso.style.opacity = '0';
-        aviso.style.transition = 'opacity 0.5s';
-        aviso.style.zIndex = '9999';
-        document.body.appendChild(aviso);
-        setTimeout(() => { aviso.style.opacity = '1'; }, 100);
-        setTimeout(() => { aviso.style.opacity = '0'; }, 1200);
-        setTimeout(() => { aviso.remove(); }, 1800);
-    }
-
-    document.querySelectorAll('.contato a').forEach(link => {
-        link.addEventListener('click', function(e) {
-            if (this.href.startsWith('mailto:')) {
-                e.preventDefault();
-                copiarTexto(this.textContent);
-            } else if (this.href.includes('wa.me')) {
-                e.preventDefault();
-                copiarTexto(this.textContent);
-            }
-        });
-    });
 });
-
