@@ -1,11 +1,12 @@
       :root {
-            --cor-primaria: #D6A2E8;
-            --cor-secundaria: #82589F;
+            --cor-primaria: #eeb09f;
+            --cor-secundaria: #edd8d1;
             --cor-destaque: #cd84f1;
-            --cor-fundo: #dfe4ea;
+            --cor-fundo: #FFFBED;
             --cor-texto: #353b48;
             --cor-branco: #f1f2f6;
             --cor-hover: #D6A2E8;
+            --cor-rose: #da9482;
         }
         body {
             font-family: 'Segoe UI', 'Arial', sans-serif;
@@ -15,8 +16,8 @@
             color: var(--cor-texto);
         }
         header {
-            background: linear-gradient(90deg, var(--cor-primaria) 60%, var(--cor-secundaria) 100%);
-            color: var(--cor-branco);
+            background: linear-gradient(90deg, var(--cor-fundo) 60%, var(--cor-secundaria) 100%);
+            color: var(--cor-rose);
             padding: 40px 0 25px 0;
             text-align: center;
             box-shadow: 0 2px 12px rgba(0,0,0,0.07);
@@ -33,15 +34,18 @@
             opacity: 0.95;
         }
         nav {
-            background: var(--cor-secundaria);
+            background: linear-gradient(90deg, var(--cor-fundo) 60%, var(--cor-secundaria) 100%);
+            display: flex;
             padding: 12px 0;
             text-align: center;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            justify-content: center;
         }
         nav a {
-            color: var(--cor-branco);
+            
+            color: var(--cor-rose);
             text-decoration: none;
-            margin: 0;
+            padding: 15px 0 30px 30px;
             font-weight: 600;
             font-size: 1.08rem;
             letter-spacing: 0.5px;
@@ -61,7 +65,7 @@
             color: var(--cor-destaque);
         }
         nav a:hover::after {
-            width: 15%;
+            width: 105%;
         }
         .container {
             max-width: 1100px;
@@ -112,7 +116,7 @@
             content: "";
             background-image: url('img/linhas.jpg'); /* ADICIONE SEU CAMINHO AQUI */
             background-size: cover;
-            background-position: center;
+            background-position: top;
             position: absolute;
             top: 0;
             left: 0;
