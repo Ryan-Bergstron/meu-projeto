@@ -200,6 +200,7 @@
             .galeria { gap: 14px; }
         }
         @media (max-width: 600px) {
+            body {overflow-x: hidden;}
             header h1 { font-size: 50px; }
             h2 { font-size: 1.2rem; }
             .container { padding: 0 2px; align-items: center; justify-content: center; max-width: 100%;}
