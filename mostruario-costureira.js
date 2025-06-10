@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     const msg = document.createElement('div');
-    msg.textContent = 'Bem-vinda ao Mostruário da Costureira!';
+    msg.textContent = 'Ateliê Mary Modas!';
     msg.style.position = 'fixed';
     msg.style.top = '20px';
     msg.style.left = '50%';

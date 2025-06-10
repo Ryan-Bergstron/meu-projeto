@@ -1,11 +1,11 @@
       :root {
-            --cor-primaria: #b48a78;
-            --cor-secundaria: #a06c5a;
-            --cor-destaque: #f7e7de;
-            --cor-fundo: #f8f8f8;
-            --cor-texto: #3d2c29;
-            --cor-branco: #fff;
-            --cor-hover: #e2cfc3;
+            --cor-primaria: #D6A2E8;
+            --cor-secundaria: #82589F;
+            --cor-destaque: #cd84f1;
+            --cor-fundo: #dfe4ea;
+            --cor-texto: #353b48;
+            --cor-branco: #f1f2f6;
+            --cor-hover: #D6A2E8;
         }
         body {
             font-family: 'Segoe UI', 'Arial', sans-serif;
