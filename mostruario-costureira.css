@@ -22,10 +22,11 @@
             box-shadow: 0 2px 12px rgba(0,0,0,0.07);
         }
         header h1 {
-            font-family: 'Playfair Display', serif;
+            font-family: "Allura", cursive;
             font-size: 2.7rem;
             margin-bottom: 10px;
             letter-spacing: 1px;
+            font-size: 120px;
         }
         header p {
             font-size: 1.2rem;
@@ -40,7 +41,7 @@
         nav a {
             color: var(--cor-branco);
             text-decoration: none;
-            margin: 0 18px;
+            margin: 0;
             font-weight: 600;
             font-size: 1.08rem;
             letter-spacing: 0.5px;
@@ -50,7 +51,7 @@
         nav a::after {
             content: '';
             display: block;
-            width: 0;
+            width: 0px;
             height: 2px;
             background: var(--cor-destaque);
             transition: width 0.3s;
@@ -60,7 +61,7 @@
             color: var(--cor-destaque);
         }
         nav a:hover::after {
-            width: 80%;
+            width: 15%;
         }
         .container {
             max-width: 1100px;
@@ -72,6 +73,11 @@
             margin-bottom: 20px;
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
+        }
+
+       
+        .cont {
+            color: var(--cor-fundo);
         }
         .galeria {
             display: grid;
@@ -91,13 +97,16 @@
             box-shadow: 0 8px 32px rgba(180,138,120,0.18);
         }
         .sobre {
+            font-family: "Great Vibes", cursive;
             background: var(--cor-branco);
             padding: 32px;
             border-radius: 12px;
             margin-bottom: 38px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-            font-size: 1.08rem;
+            font-size: 37px;
             line-height: 1.7;
+            display: flex;
+            justify-content: center;
         }
         footer {
             background: linear-gradient(90deg, var(--cor-secundaria) 60%, var(--cor-primaria) 100%);
